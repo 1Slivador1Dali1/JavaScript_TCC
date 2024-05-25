@@ -51,7 +51,41 @@
 
 // Ex 011
 
-const now = 2037;
-const ageJones = now - 1991;
-const ageSarah = now - 2018;
-console.log(ageJones, ageSarah);
+// const now = 2037;
+// const ageJones = now - 1991;
+// const ageSarah = now - 2018;
+// console.log(ageJones, ageSarah);
+
+// Ex 012
+
+// Ex 013 - coding challenge #1
+
+let markH = 1.69;
+let markW = 78;
+
+let johnH = 1.95;
+let johnW = 92;
+
+let bmiM = markW / markH ** 2;
+let bmiJ = johnW / johnH ** 2;
+
+let markHignerBMI = bmiM > bmiJ;
+
+console.log(bmiM);
+console.log(bmiJ);
+console.log(markHignerBMI)
+
+markH = 1.88;
+markW = 95;
+
+johnH = 1.76;
+johnW = 85;
+
+bmiM = markW / markH ** 2;
+bmiJ = johnW / johnH ** 2;
+
+markHignerBMI = bmiM > bmiJ;
+
+console.log(bmiM);
+console.log(bmiJ);
+console.log(markHignerBMI)
