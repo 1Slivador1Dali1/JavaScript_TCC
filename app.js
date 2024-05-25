@@ -38,13 +38,20 @@
 
 // Ex 010
 
-let age = 30;
-age = 31;
+// let age = 30;
+// age = 31;
 
-const birthYear = 1991;
-// birthYear = 1990; // нельзя преопределять const
+// const birthYear = 1991;
+// // birthYear = 1990; // нельзя преопределять const
 
-// const job; // const нужно инициализирровать с самого начала при объявлении
+// // const job; // const нужно инициализирровать с самого начала при объявлении
 
-var job = 'prorammer'; // var плохая практика так как устарел и может запутать
-job = 'teacher';
+// var job = 'prorammer'; // var плохая практика так как устарел и может запутать
+// job = 'teacher';
+
+// Ex 011
+
+const now = 2037;
+const ageJones = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJones, ageSarah);
