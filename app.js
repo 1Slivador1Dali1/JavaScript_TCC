@@ -153,20 +153,59 @@
 
 // Ex 019
 
-const age = '18';
-if (age == 18) { // == Проверяет значение === проверяет значение и тип 
-    console.log('😤');
-}
-else {
-    console.log('🧓')
-}
+// const age = '18';
+// if (age == 18) { // == Проверяет значение === проверяет значение и тип 
+//     console.log('😤');
+// }
+// else {
+//     console.log('🧓')
+// }
 
 // Ex 020
 
 // Ex 021
 
-// Ex 022
+// Ex 022 - coding challenge #3
+
+// const dolphinsScores = 96 + 108 + 89;
+// const middleDolphinsScores = dolphinsScores / 3;
+
+// const koalasScores = 88 + 91 + 110;
+// const middleKoalasScores = koalasScores / 3;
+
+// if (middleDolphinsScores > middleKoalasScores) {
+//     console.log('Победили Дельфины');
+// }
+// else if (middleDolphinsScores < middleKoalasScores) {
+//     console.log('Победили Коалы');
+// }
+// else {
+//     console.log('Ничья!');
+// }
+
+const dolphinsScores = (97 + 112 + 101) / 3;
+const koalasScores = (109 + 95 + 123) / 3;
+
+if (dolphinsScores > koalasScores && dolphinsScores >= 100) {
+    console.log('Победили Дельфины');
+}
+else if (dolphinsScores < koalasScores && koalasScores >= 100) {
+    console.log('Победили Коалы');
+}
+else if (dolphinsScores === koalasScores || dolphinsScores && koalasScores < 100) {
+    console.log('Ничья!');
+}
 
 // Ex 023
 
 // Ex 024
+
+// Ex 025
+
+// Ex 026
+
+// Ex 027
+
+// Ex 028
+
+// Ex 029
