@@ -106,43 +106,67 @@
 
 // Ex 016 - coding challenge #2
 
-let markH = 1.69;
-let markW = 78;
+// let markH = 1.69;
+// let markW = 78;
 
-let johnH = 1.95;
-let johnW = 92;
+// let johnH = 1.95;
+// let johnW = 92;
 
-let bmiM = markW / markH ** 2;
-let bmiJ = johnW / johnH ** 2;
+// let bmiM = markW / markH ** 2;
+// let bmiJ = johnW / johnH ** 2;
 
-let markHignerBMI = bmiM > bmiJ;
+// let markHignerBMI = bmiM > bmiJ;
 
-console.log(bmiM);
-console.log(bmiJ);
-console.log(markHignerBMI)
+// console.log(bmiM);
+// console.log(bmiJ);
+// console.log(markHignerBMI)
 
-if (markHignerBMI) {
-    console.log(`Mark BMI ${Math.floor(bmiM)} > John BMI ${Math.floor(bmiJ)}`);
-}
+// if (markHignerBMI) {
+//     console.log(`Mark BMI ${Math.floor(bmiM)} > John BMI ${Math.floor(bmiJ)}`);
+// }
 
-markH = 1.88;
-markW = 95;
+// markH = 1.88;
+// markW = 95;
 
-johnH = 1.76;
-johnW = 85;
+// johnH = 1.76;
+// johnW = 85;
 
-bmiM = markW / markH ** 2;
-bmiJ = johnW / johnH ** 2;
+// bmiM = markW / markH ** 2;
+// bmiJ = johnW / johnH ** 2;
 
-markHignerBMI = bmiM > bmiJ;
+// markHignerBMI = bmiM > bmiJ;
 
-console.log(bmiM);
-console.log(bmiJ);
-console.log(markHignerBMI)
+// console.log(bmiM);
+// console.log(bmiJ);
+// console.log(markHignerBMI)
 
-if (markHignerBMI) {
-    console.log(`Mark BMI > John BMI`);
+// if (markHignerBMI) {
+//     console.log(`Mark BMI > John BMI`);
+// }
+// else {
+//     console.log(`Mark BMI ${Math.floor(bmiM)} < John BMI ${Math.floor(bmiJ)}`);
+// }
+
+// Ex 017
+
+// Ex 018
+
+// Ex 019
+
+const age = '18';
+if (age == 18) { // == Проверяет значение === проверяет значение и тип 
+    console.log('😤');
 }
 else {
-    console.log(`Mark BMI ${Math.floor(bmiM)} < John BMI ${Math.floor(bmiJ)}`);
+    console.log('🧓')
 }
+
+// Ex 020
+
+// Ex 021
+
+// Ex 022
+
+// Ex 023
+
+// Ex 024
