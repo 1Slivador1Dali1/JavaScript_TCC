@@ -214,22 +214,27 @@
 
 // Ex 025
 
-const age = 23;
-const drink = age >= 18 ? 'wine' : 'water'; // Тернарный оператор
-console.log(drink);
+// const age = 23;
+// const drink = age >= 18 ? 'wine' : 'water'; // Тернарный оператор
+// console.log(drink);
 
-let drink2;
+// let drink2;
 
-if (age >= 18) {
-    drink2 = 'wine';
-} else {
-    drink2 = 'water';
-}
-console.log(drink2);
+// if (age >= 18) {
+//     drink2 = 'wine';
+// } else {
+//     drink2 = 'water';
+// }
+// console.log(drink2);
 
-console.log(`Я люблю пить ${age >= 18 ? 'вино' : 'воду'}`);
+// console.log(`Я люблю пить ${age >= 18 ? 'вино' : 'воду'}`);
 
-// Ex 026
+// Ex 026 - coding challenge #4
+
+const bill = 40;
+const tip = bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
+
+console.log(`Билл заказал на ${bill}$ , чаевые составили ${tip}$ , и общий счет ${bill + tip}$`);
 
 // Ex 027
 
