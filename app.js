@@ -248,6 +248,23 @@
 
 // Ex 030
 
+function logger() {
+    console.log('Jonas')
+}
+
+logger(); // Пример вызова функции
+logger();
+logger();
+
+function fruitProcessor(apples, oranges) {
+    const juice = `Сок из ${apples} яблок и ${oranges} апельсинов`;    
+    return juice;
+}
+
+const juiceFresh = fruitProcessor(10, 2);
+console.log(juiceFresh);
+console.log(fruitProcessor(0, 10));
+
 // Ex 031
 
 // Ex 032
