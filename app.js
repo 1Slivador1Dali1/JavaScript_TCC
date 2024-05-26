@@ -314,30 +314,51 @@
 
 // Ex 034
 
-const calcAge = function (birthYear) {
-    return 2037 - birthYear;
-}
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// }
 
-const yearsUntilRetirement = function (birthYear, firstName) {
-    const age = calcAge(birthYear);
-    const retirement = 65 - age;
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
 
-    if (retirement > 0) {
-        return `${firstName} выйдет на пенсию через ${retirement} лет`;
-    } 
-    else if (retirement < 0) {
-        return `${firstName} вышел на пенсию ${retirement * (-1)} года назад`;
-    }
-    else {
-        return `${firstName} выходит на пенсию сейчас`;
-    }
-}
+//     if (retirement > 0) {
+//         return `${firstName} выйдет на пенсию через ${retirement} лет`;
+//     } 
+//     else if (retirement < 0) {
+//         return `${firstName} вышел на пенсию ${retirement * (-1)} года назад`;
+//     }
+//     else {
+//         return `${firstName} выходит на пенсию сейчас`;
+//     }
+// }
 
-console.log(yearsUntilRetirement(1991, 'Huigy'));
-console.log(yearsUntilRetirement(1972, 'Huigy'));
-console.log(yearsUntilRetirement(1950, 'Huigy'));
+// console.log(yearsUntilRetirement(1991, 'Huigy'));
+// console.log(yearsUntilRetirement(1972, 'Huigy'));
+// console.log(yearsUntilRetirement(1950, 'Huigy'));
 
 // Ex 035 - coding challenge #5
+
+const calcAverage = (roundOne, roundTwo , roundThree) => (roundOne + roundTwo + roundThree) / 3;
+
+let dolphinesScores = calcAverage(44, 23, 71);
+let koalasScores = calcAverage(65, 54, 49);
+
+const checkWinner = function (avgDolphines, avgKoalas) {
+
+    if (avgDolphines >= 2 * avgKoalas) {
+        return console.log('Dolphines Win!');
+    }
+    else if (avgKoalas >= 2 * avgDolphines) {
+        return console.log('Koalas Win!');
+    }
+    else {
+        return console.log('No team wins...');
+    }
+}
+
+checkWinner(dolphinesScores, koalasScores);
+checkWinner(500, 200);
 
 // Ex 036
 
