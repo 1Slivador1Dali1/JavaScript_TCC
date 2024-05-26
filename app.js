@@ -248,24 +248,38 @@
 
 // Ex 030
 
-function logger() {
-    console.log('Jonas')
-}
+// function logger() {
+//     console.log('Jonas')
+// }
 
-logger(); // Пример вызова функции
-logger();
-logger();
+// logger(); // Пример вызова функции
+// logger();
+// logger();
 
-function fruitProcessor(apples, oranges) {
-    const juice = `Сок из ${apples} яблок и ${oranges} апельсинов`;    
-    return juice;
-}
+// function fruitProcessor(apples, oranges) {
+//     const juice = `Сок из ${apples} яблок и ${oranges} апельсинов`;    
+//     return juice;
+// }
 
-const juiceFresh = fruitProcessor(10, 2);
-console.log(juiceFresh);
-console.log(fruitProcessor(0, 10));
+// const juiceFresh = fruitProcessor(10, 2);
+// console.log(juiceFresh);
+// console.log(fruitProcessor(0, 10));
 
 // Ex 031
+
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991);
+console.log(age1);
+
+const calcAge2 = function (birthYear) { // При таком варианте не происходит всплытие
+    return 2037 - birthYear;
+}
+
+const age2 = calcAge2(1991);
+console.log(age2);
 
 // Ex 032
 
