@@ -339,28 +339,56 @@
 
 // Ex 035 - coding challenge #5
 
-const calcAverage = (roundOne, roundTwo , roundThree) => (roundOne + roundTwo + roundThree) / 3;
+// const calcAverage = (roundOne, roundTwo , roundThree) => (roundOne + roundTwo + roundThree) / 3;
 
-let dolphinesScores = calcAverage(44, 23, 71);
-let koalasScores = calcAverage(65, 54, 49);
+// let dolphinesScores = calcAverage(44, 23, 71);
+// let koalasScores = calcAverage(65, 54, 49);
 
-const checkWinner = function (avgDolphines, avgKoalas) {
+// const checkWinner = function (avgDolphines, avgKoalas) {
 
-    if (avgDolphines >= 2 * avgKoalas) {
-        return console.log('Dolphines Win!');
-    }
-    else if (avgKoalas >= 2 * avgDolphines) {
-        return console.log('Koalas Win!');
-    }
-    else {
-        return console.log('No team wins...');
-    }
-}
+//     if (avgDolphines >= 2 * avgKoalas) {
+//         return console.log('Dolphines Win!');
+//     }
+//     else if (avgKoalas >= 2 * avgDolphines) {
+//         return console.log('Koalas Win!');
+//     }
+//     else {
+//         return console.log('No team wins...');
+//     }
+// }
 
-checkWinner(dolphinesScores, koalasScores);
-checkWinner(500, 200);
+// checkWinner(dolphinesScores, koalasScores);
+// checkWinner(500, 200);
 
 // Ex 036
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const years2 = [1990, 1967, 2002, 2012];
+
+console.log(calcAge(years2[2]));
 
 // Ex 037
 
