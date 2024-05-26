@@ -198,21 +198,36 @@
 
 // Ex 023
 
-const day = 'monday';
+// const day = 'monday';
 
-switch (day) {
-    case 'monday':
-        console.log('Plan');
-        break;
+// switch (day) {
+//     case 'monday':
+//         console.log('Plan');
+//         break;
 
-    default:
-        console.log('No!');
-        break;
-}
+//     default:
+//         console.log('No!');
+//         break;
+// }
 
 // Ex 024
 
 // Ex 025
+
+const age = 23;
+const drink = age >= 18 ? 'wine' : 'water'; // Тернарный оператор
+console.log(drink);
+
+let drink2;
+
+if (age >= 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(`Я люблю пить ${age >= 18 ? 'вино' : 'воду'}`);
 
 // Ex 026
 
@@ -220,4 +235,62 @@ switch (day) {
 
 // Ex 028
 
-// Ex 029
+// Ex 030
+
+// Ex 031
+
+// Ex 032
+
+// Ex 033
+
+// Ex 034
+
+// Ex 035
+
+// Ex 036
+
+// Ex 037
+
+// Ex 038
+
+// Ex 039
+
+// Ex 040
+
+// Ex 041
+
+// Ex 042
+
+// Ex 043
+
+// Ex 044
+
+// Ex 045
+
+// Ex 046
+
+// Ex 047
+
+// Ex 048
+
+// Ex 049
+
+// Ex 050
+
+// Ex 051
+
+// Ex 052
+
+// Ex 053
+
+// Ex 054
+
+// Ex 055
+
+// Ex 056
+
+// Ex 057
+
+// Ex 058
+
+// Ex 059
