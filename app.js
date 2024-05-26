@@ -183,20 +183,32 @@
 //     console.log('Ничья!');
 // }
 
-const dolphinsScores = (97 + 112 + 101) / 3;
-const koalasScores = (109 + 95 + 123) / 3;
+// const dolphinsScores = (97 + 112 + 101) / 3;
+// const koalasScores = (109 + 95 + 123) / 3;
 
-if (dolphinsScores > koalasScores && dolphinsScores >= 100) {
-    console.log('Победили Дельфины');
-}
-else if (dolphinsScores < koalasScores && koalasScores >= 100) {
-    console.log('Победили Коалы');
-}
-else if (dolphinsScores === koalasScores || dolphinsScores && koalasScores < 100) {
-    console.log('Ничья!');
-}
+// if (dolphinsScores > koalasScores && dolphinsScores >= 100) {
+//     console.log('Победили Дельфины');
+// }
+// else if (dolphinsScores < koalasScores && koalasScores >= 100) {
+//     console.log('Победили Коалы');
+// }
+// else if (dolphinsScores === koalasScores || dolphinsScores && koalasScores < 100) {
+//     console.log('Ничья!');
+// }
 
 // Ex 023
+
+const day = 'monday';
+
+switch (day) {
+    case 'monday':
+        console.log('Plan');
+        break;
+
+    default:
+        console.log('No!');
+        break;
+}
 
 // Ex 024
 
