@@ -283,19 +283,34 @@
 
 // Ex 032
 
-const calcAge3 = birthYear => 2037 - birthYear; //Стрелочная функция
-const age3 = calcAge3(1991);
-console.log(age3);
+// const calcAge3 = birthYear => 2037 - birthYear; //Стрелочная функция
+// const age3 = calcAge3(1991);
+// console.log(age3);
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2037 - birthYear;
-    const retirement = 65 - age;
-    // return retirement;
-    return `${firstName} retires in ${retirement} years`;
-}
-console.log(yearsUntilRetirement(1991, 'Jonh'));
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years`;
+// }
+// console.log(yearsUntilRetirement(1991, 'Jonh'));
 
 // Ex 033
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Сок из ${applePieces} долек яблок и ${orangePieces} долек апельсинов`;    
+    return juice;
+}
+
+const fruitCoctaile = fruitProcessor(2, 3);
+console.log(fruitCoctaile);
 
 // Ex 034
 
