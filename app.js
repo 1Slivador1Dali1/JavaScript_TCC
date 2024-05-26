@@ -297,22 +297,45 @@
 
 // Ex 033
 
-function cutFruitPieces(fruit) {
-    return fruit * 4;
-}
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
 
-function fruitProcessor(apples, oranges) {
-    const applePieces = cutFruitPieces(apples);
-    const orangePieces = cutFruitPieces(oranges);
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangePieces = cutFruitPieces(oranges);
 
-    const juice = `Сок из ${applePieces} долек яблок и ${orangePieces} долек апельсинов`;    
-    return juice;
-}
+//     const juice = `Сок из ${applePieces} долек яблок и ${orangePieces} долек апельсинов`;    
+//     return juice;
+// }
 
-const fruitCoctaile = fruitProcessor(2, 3);
-console.log(fruitCoctaile);
+// const fruitCoctaile = fruitProcessor(2, 3);
+// console.log(fruitCoctaile);
 
 // Ex 034
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        return `${firstName} выйдет на пенсию через ${retirement} лет`;
+    } 
+    else if (retirement < 0) {
+        return `${firstName} вышел на пенсию ${retirement * (-1)} года назад`;
+    }
+    else {
+        return `${firstName} выходит на пенсию сейчас`;
+    }
+}
+
+console.log(yearsUntilRetirement(1991, 'Huigy'));
+console.log(yearsUntilRetirement(1972, 'Huigy'));
+console.log(yearsUntilRetirement(1950, 'Huigy'));
 
 // Ex 035 - coding challenge #5
 
