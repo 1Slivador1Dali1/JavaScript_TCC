@@ -1,3 +1,5 @@
+'use strict';
+
 // Ex 007
 
 // let js = 'amazing';
@@ -231,14 +233,18 @@
 
 // Ex 026 - coding challenge #4
 
-const bill = 40;
-const tip = bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
+// const bill = 40;
+// const tip = bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
 
-console.log(`Билл заказал на ${bill}$ , чаевые составили ${tip}$ , и общий счет ${bill + tip}$`);
+// console.log(`Билл заказал на ${bill}$ , чаевые составили ${tip}$ , и общий счет ${bill + tip}$`);
 
 // Ex 027
 
 // Ex 028
+
+// Ex 029
+
+// 'use strict'; Вводим в начале скрипта как строгий режим чтобы исключить ошибки и показать изх в консоли
 
 // Ex 030
 
