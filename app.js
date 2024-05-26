@@ -267,33 +267,45 @@
 
 // Ex 031
 
-function calcAge1(birthYear) {
-    return 2037 - birthYear;
-}
+// function calcAge1(birthYear) {
+//     return 2037 - birthYear;
+// }
 
-const age1 = calcAge1(1991);
-console.log(age1);
+// const age1 = calcAge1(1991);
+// console.log(age1);
 
-const calcAge2 = function (birthYear) { // При таком варианте не происходит всплытие
-    return 2037 - birthYear;
-}
+// const calcAge2 = function (birthYear) { // При таком варианте не происходит всплытие
+//     return 2037 - birthYear;
+// }
 
-const age2 = calcAge2(1991);
-console.log(age2);
+// const age2 = calcAge2(1991);
+// console.log(age2);
 
 // Ex 032
+
+const calcAge3 = birthYear => 2037 - birthYear; //Стрелочная функция
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+console.log(yearsUntilRetirement(1991, 'Jonh'));
 
 // Ex 033
 
 // Ex 034
 
-// Ex 035
+// Ex 035 - coding challenge #5
 
 // Ex 036
 
 // Ex 037
 
-// Ex 038
+// Ex 038 - coding challenge #6
 
 // Ex 039
 
@@ -301,7 +313,7 @@ console.log(age2);
 
 // Ex 041
 
-// Ex 042
+// Ex 042 - coding challenge #7
 
 // Ex 043
 
@@ -311,7 +323,7 @@ console.log(age2);
 
 // Ex 046
 
-// Ex 047
+// Ex 047 - coding challenge #8
 
 // Ex 048
 
@@ -331,7 +343,7 @@ console.log(age2);
 
 // Ex 056
 
-// Ex 057
+// Ex 057 - coding challenge #9
 
 // Ex 058
 
