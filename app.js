@@ -392,36 +392,62 @@
 
 // Ex 037
 
-const friends = ['Michael', 'Steven', 'Peter'];
-const newLenght = friends.push('Jay'); // добавить в конец массива
-console.log(friends);
-console.log(newLenght);
+// const friends = ['Michael', 'Steven', 'Peter'];
+// const newLenght = friends.push('Jay'); // добавить в конец массива
+// console.log(friends);
+// console.log(newLenght);
 
-friends.unshift('John'); // добавить в начало массива
-console.log(friends);
+// friends.unshift('John'); // добавить в начало массива
+// console.log(friends);
 
-friends.pop(); // удалить последний элемент в массиве 
-const popped = friends.pop();
-console.log(popped); 
-console.log(friends);
+// friends.pop(); // удалить последний элемент в массиве 
+// const popped = friends.pop();
+// console.log(popped); 
+// console.log(friends);
 
-friends.shift(); // удалитьь начальный элеменнт в массиве 
-console.log(friends);
+// friends.shift(); // удалитьь начальный элеменнт в массиве 
+// console.log(friends);
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob')); // -1 так как такого элемента нет в массиве 
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Bob')); // -1 так как такого элемента нет в массиве 
 
-friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes('23')); // false так как идет строгое равенство в том числе и по типу 
-console.log(friends.includes(23));
+// friends.push(23);
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+// console.log(friends.includes('23')); // false так как идет строгое равенство в том числе и по типу 
+// console.log(friends.includes(23));
 
-if (friends.includes('Steven')) {
-    console.log('You have friend Steven');
-}
+// if (friends.includes('Steven')) {
+//     console.log('You have friend Steven');
+// }
 
 // Ex 038 - coding challenge #6
+
+// function calcTip(money) {
+//     if (money >= 50 && money <= 300) {
+//         const tip = money * (15 / 100);
+//         return tip;
+//     }
+//     else {
+//         const tip = money * (20 / 100);
+//         return tip;
+//     }
+// }
+
+// const calcTip = function(bill) {
+//     return bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
+// }
+
+const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
+const totals = bills.concat(tips);
+const totals2 = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips);
+console.log(totals);
+console.log(totals2);
 
 // Ex 039
 
