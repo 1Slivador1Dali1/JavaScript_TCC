@@ -451,14 +451,25 @@
 
 // Ex 039
 
-const jonasArray = [
-    'Jonas',
-    'Schmedtman',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven']
-]; // Массив
-console.log(jonasArray);
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtman',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ]; // Массив
+// console.log(jonasArray);
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtman',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
+// }; // Объект
+// console.log(jonas);
+
+// Ex 040
 
 const jonas = {
     firstName: 'Jonas',
@@ -466,10 +477,32 @@ const jonas = {
     age: 2037 - 1991,
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven']
-}; // Объект
+};
 console.log(jonas);
 
-// Ex 040
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+// const interestedIN = prompt() // ввести название элемента объекта
+// console.log(interestedIN);
+// console.log(jonas[interestedIN]);
+
+// if (jonas[interestedIN]) {
+//     console.log(jonas[interestedIN]);
+// }
+// else {
+//     console.log('Wrong request!');
+// }
+
+jonas.location = 'Portugal'; // добавление новых элементов в объект
+jonas['twitter'] = '@jonassschmedtman';
+console.log(jonas);
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
 
 // Ex 041
 
