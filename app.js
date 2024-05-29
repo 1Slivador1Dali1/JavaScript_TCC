@@ -362,35 +362,64 @@
 
 // Ex 036
 
-const friends = ['Michael', 'Steven', 'Peter'];
-console.log(friends);
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
 
-const years = new Array(1991, 1984, 2008, 2020);
+// const years = new Array(1991, 1984, 2008, 2020);
 
-console.log(friends[0]);
-console.log(friends[2]);
+// console.log(friends[0]);
+// console.log(friends[2]);
 
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = 'Jay';
-console.log(friends);
+// friends[2] = 'Jay';
+// console.log(friends);
 
-const firstName = 'Jonas';
-const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
-console.log(jonas);
-console.log(jonas.length);
+// const firstName = 'Jonas';
+// const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+// console.log(jonas);
+// console.log(jonas.length);
 
 
-const calcAge = function (birthYear) {
-    return 2037 - birthYear;
-}
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// }
 
-const years2 = [1990, 1967, 2002, 2012];
+// const years2 = [1990, 1967, 2002, 2012];
 
-console.log(calcAge(years2[2]));
+// console.log(calcAge(years2[2]));
 
 // Ex 037
+
+const friends = ['Michael', 'Steven', 'Peter'];
+const newLenght = friends.push('Jay'); // добавить в конец массива
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift('John'); // добавить в начало массива
+console.log(friends);
+
+friends.pop(); // удалить последний элемент в массиве 
+const popped = friends.pop();
+console.log(popped); 
+console.log(friends);
+
+friends.shift(); // удалитьь начальный элеменнт в массиве 
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob')); // -1 так как такого элемента нет в массиве 
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes('23')); // false так как идет строгое равенство в том числе и по типу 
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+    console.log('You have friend Steven');
+}
 
 // Ex 038 - coding challenge #6
 
