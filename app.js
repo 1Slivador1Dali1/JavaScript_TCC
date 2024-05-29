@@ -438,18 +438,36 @@
 //     return bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
 // }
 
-const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
-const totals = bills.concat(tips);
-const totals2 = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
+// const totals = bills.concat(tips);
+// const totals2 = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
-console.log(bills, tips);
-console.log(totals);
-console.log(totals2);
+// console.log(bills, tips);
+// console.log(totals);
+// console.log(totals2);
 
 // Ex 039
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtman',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+]; // Массив
+console.log(jonasArray);
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtman',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}; // Объект
+console.log(jonas);
 
 // Ex 040
 
