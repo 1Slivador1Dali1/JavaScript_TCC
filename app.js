@@ -506,49 +506,75 @@
 
 // Ex 041
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    birthYeah: 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense: true,
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     birthYeah: 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
 
-    // calcAge: function(birthYeah) {
-    //     return 2037 - birthYeah;
-    // }
+//     // calcAge: function(birthYeah) {
+//     //     return 2037 - birthYeah;
+//     // }
 
-    // calcAge: function() {
-    //     return 2037 - this.birthYeah;
-    // }
+//     // calcAge: function() {
+//     //     return 2037 - this.birthYeah;
+//     // }
 
-    calcAge: function() {
-        this.age = 2037 - this.birthYeah;
-        return this.age;
-    },
+//     calcAge: function() {
+//         this.age = 2037 - this.birthYeah;
+//         return this.age;
+//     },
 
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`;
-    }
-};
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`;
+//     }
+// };
 
-console.log(jonas.calcAge(1991));
-console.log(jonas['calcAge'](1991));
-console.log(jonas.calcAge(jonas.birthYeah));
+// console.log(jonas.calcAge(1991));
+// console.log(jonas['calcAge'](1991));
+// console.log(jonas.calcAge(jonas.birthYeah));
 
-console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
 
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
 
-// "Jonas is a 46-year old teacher, and he has a/no driver's license"
+// // "Jonas is a 46-year old teacher, and he has a/no driver's license"
 
-// console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has ${jonas.hasDriversLicense ? 'a' : 'no'} driver's license`);
+// // console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has ${jonas.hasDriversLicense ? 'a' : 'no'} driver's license`);
 
-console.log(jonas.getSummary());
+// console.log(jonas.getSummary());
 
 // Ex 042 - coding challenge #7
+
+const mark = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    weight: 78,
+    height: 1.69,
+    calcBMI : function() {
+        return Math.round(this.weight / (this.height ** 2));
+        // this.bmi = this.weight / this.height ** 2;
+        // return this.bmi;
+    }
+}
+
+const john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    weight: 92,
+    height: 1.95,
+    calcBMI : function() {
+        return Math.round(this.weight / (this.height ** 2));
+        // this.bmi = this.weight / this.height ** 2;
+        // return this.bmi;
+    }
+}
+
+console.log(`${john.firstName}'s BMI (${john.calcBMI()}) is ${john.calcBMI() > mark.calcBMI() ? 'higer' : 'not higer'} than ${mark.firstName}'s (${mark.calcBMI()})`);
 
 // Ex 043
 
