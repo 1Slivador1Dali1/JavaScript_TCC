@@ -584,50 +584,75 @@
 
 // Ex 044
 
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtman',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven'],
+//     true
+// ];
+
+// const types = [];
+
+// for( let i = 0; i < jonasArray.length; i++) {
+//     console.log(jonasArray[i], typeof jonasArray[i]);
+
+//     // types[i] = typeof jonasArray[i];
+//     types.push(typeof jonasArray[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for( let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+
+// console.log(ages);
+
+// // continue and break
+
+// for( let i = 0; i < jonasArray.length; i++) {
+//     if(typeof jonasArray[i] !== 'string') continue;
+
+//     console.log(jonasArray[i], typeof jonasArray[i]);
+// }
+
+// for( let i = 0; i < jonasArray.length; i++) {
+//     if(typeof jonasArray[i] === 'number') break;
+
+//     console.log(jonasArray[i], typeof jonasArray[i]);
+// }
+
+// Ex 045
+
 const jonasArray = [
     'Jonas',
     'Schmedtman',
     2037 - 1991,
     'teacher',
-    ['Michael', 'Peter', 'Steven'],
-    true
+    ['Michael', 'Peter', 'Steven']
 ];
 
-const types = [];
+const reverseJonasArray = [];
 
-for( let i = 0; i < jonasArray.length; i++) {
-    console.log(jonasArray[i], typeof jonasArray[i]);
-
-    // types[i] = typeof jonasArray[i];
-    types.push(typeof jonasArray[i]);
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+    reverseJonasArray.push(jonasArray[i]);
 }
 
-console.log(types);
+console.log(reverseJonasArray);
+console.log(jonasArray.reverse());
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`----------- Старт упражнения ${exercise}`);
 
-for( let i = 0; i < years.length; i++) {
-    ages.push(2037 - years[i]);
+    for (let repetition = 1; repetition <= 5; repetition++){
+        console.log(`Повторение ${repetition}`);
+    }
 }
-
-console.log(ages);
-
-// continue and break
-
-for( let i = 0; i < jonasArray.length; i++) {
-    if(typeof jonasArray[i] !== 'string') continue;
-
-    console.log(jonasArray[i], typeof jonasArray[i]);
-}
-
-for( let i = 0; i < jonasArray.length; i++) {
-    if(typeof jonasArray[i] === 'number') break;
-
-    console.log(jonasArray[i], typeof jonasArray[i]);
-}
-
-// Ex 045
 
 // Ex 046
 
