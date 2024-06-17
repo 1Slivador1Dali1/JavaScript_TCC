@@ -578,11 +578,54 @@
 
 // Ex 043
 
-for (let i = 1; i <= 10; i++) {
-    console.log(`Повторение номер: ${i}`);
-}
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`Повторение номер: ${i}`);
+// }
 
 // Ex 044
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtman',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+const types = [];
+
+for( let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i], typeof jonasArray[i]);
+
+    // types[i] = typeof jonasArray[i];
+    types.push(typeof jonasArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for( let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+
+for( let i = 0; i < jonasArray.length; i++) {
+    if(typeof jonasArray[i] !== 'string') continue;
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+for( let i = 0; i < jonasArray.length; i++) {
+    if(typeof jonasArray[i] === 'number') break;
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
 
 // Ex 045
 
