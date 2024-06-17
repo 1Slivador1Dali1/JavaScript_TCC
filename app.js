@@ -550,33 +550,37 @@
 
 // Ex 042 - coding challenge #7
 
-const mark = {
-    firstName: 'Mark',
-    lastName: 'Miller',
-    weight: 78,
-    height: 1.69,
-    calcBMI : function() {
-        return Math.round(this.weight / (this.height ** 2));
-        // this.bmi = this.weight / this.height ** 2;
-        // return this.bmi;
-    }
-}
+// const mark = {
+//     firstName: 'Mark',
+//     lastName: 'Miller',
+//     weight: 78,
+//     height: 1.69,
+//     calcBMI : function() {
+//         return Math.round(this.weight / (this.height ** 2));
+//         // this.bmi = this.weight / this.height ** 2;
+//         // return this.bmi;
+//     }
+// }
 
-const john = {
-    firstName: 'John',
-    lastName: 'Smith',
-    weight: 92,
-    height: 1.95,
-    calcBMI : function() {
-        return Math.round(this.weight / (this.height ** 2));
-        // this.bmi = this.weight / this.height ** 2;
-        // return this.bmi;
-    }
-}
+// const john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     weight: 92,
+//     height: 1.95,
+//     calcBMI : function() {
+//         return Math.round(this.weight / (this.height ** 2));
+//         // this.bmi = this.weight / this.height ** 2;
+//         // return this.bmi;
+//     }
+// }
 
-console.log(`${john.firstName}'s BMI (${john.calcBMI()}) is ${john.calcBMI() > mark.calcBMI() ? 'higer' : 'not higer'} than ${mark.firstName}'s (${mark.calcBMI()})`);
+// console.log(`${john.firstName}'s BMI (${john.calcBMI()}) is ${john.calcBMI() > mark.calcBMI() ? 'higer' : 'not higer'} than ${mark.firstName}'s (${mark.calcBMI()})`);
 
 // Ex 043
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`Повторение номер: ${i}`);
+}
 
 // Ex 044
 
