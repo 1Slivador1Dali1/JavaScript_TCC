@@ -629,32 +629,47 @@
 
 // Ex 045
 
-const jonasArray = [
-    'Jonas',
-    'Schmedtman',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven']
-];
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtman',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ];
 
-const reverseJonasArray = [];
+// const reverseJonasArray = [];
 
-for (let i = jonasArray.length - 1; i >= 0; i--) {
-    reverseJonasArray.push(jonasArray[i]);
-}
+// for (let i = jonasArray.length - 1; i >= 0; i--) {
+//     reverseJonasArray.push(jonasArray[i]);
+// }
 
-console.log(reverseJonasArray);
-console.log(jonasArray.reverse());
+// console.log(reverseJonasArray);
+// console.log(jonasArray.reverse());
 
-for (let exercise = 1; exercise < 4; exercise++) {
-    console.log(`----------- Старт упражнения ${exercise}`);
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`----------- Старт упражнения ${exercise}`);
 
-    for (let repetition = 1; repetition <= 5; repetition++){
-        console.log(`Повторение ${repetition}`);
-    }
-}
+//     for (let repetition = 1; repetition <= 5; repetition++){
+//         console.log(`Повторение ${repetition}`);
+//     }
+// }
 
 // Ex 046
+
+let rep = 1;
+
+while (rep <= 10) {
+    console.log(`Повторение номер ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+while (dice !== 6) {
+    console.log(dice);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log(`Число равно 6 цикл остановлен`)
+}
 
 // Ex 047 - coding challenge #8
 
@@ -681,3 +696,23 @@ for (let exercise = 1; exercise < 4; exercise++) {
 // Ex 058
 
 // Ex 059
+
+// Ex 060
+
+// Ex 061
+
+// Ex 062
+
+// Ex 063
+
+// Ex 064
+
+// Ex 065
+
+// Ex 066
+
+// Ex 067
+
+// Ex 068
+
+// Ex 069
