@@ -720,36 +720,49 @@
 
 // Ex 054
 
-const temperatures1 = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
-const temperatures2 = [8, -5, -8, 1, 4];
-const allTemp = temperatures1.concat(temperatures2);
+// const temperatures1 = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+// const temperatures2 = [8, -5, -8, 1, 4];
+// const allTemp = temperatures1.concat(temperatures2);
 
-const calcTempAmplitude = function (temps) {
-  let max = temps[0];
-  let min = temps[0];
+// const calcTempAmplitude = function (temps) {
+//   let max = temps[0];
+//   let min = temps[0];
 
-  for (let i = 0; i < temps.length; i++) {
-    const cutTemp = temps[i];
-    if (typeof cutTemp !== 'number') continue;
+//   for (let i = 0; i < temps.length; i++) {
+//     const cutTemp = temps[i];
+//     if (typeof cutTemp !== 'number') continue;
 
-    if (cutTemp > max) max = cutTemp;
-    if (cutTemp < min) min = cutTemp;
-  }
+//     if (cutTemp > max) max = cutTemp;
+//     if (cutTemp < min) min = cutTemp;
+//   }
 
-  console.log(
-    `Максимальная температура : ${max} 
-    \nМинимальная температура : ${min}`
-  );
-  return max - min;
-};
+//   console.log(
+//     `Максимальная температура : ${max}
+//     \nМинимальная температура : ${min}`
+//   );
+//   return max - min;
+// };
 
-console.log(allTemp);
-const amplitude = calcTempAmplitude(allTemp);
-console.log(`Амплитуда температур : ${amplitude}`);
+// console.log(allTemp);
+// const amplitude = calcTempAmplitude(allTemp);
+// console.log(`Амплитуда температур : ${amplitude}`);
 
 // Ex 055
 
 // Ex 056
+
+const measureKelvin = function () {
+    const measurement = {
+      type: 'temp',
+      unit: 'celsius',
+      value: Number(prompt('Градусы в цельсиях:')),
+    };
+  
+    const kelvin = measurement.value + 273;
+    return kelvin;
+  };
+  
+  console.log(measureKelvin());
 
 // Ex 057 - coding challenge #9
 
