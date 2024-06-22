@@ -156,7 +156,7 @@
 // Ex 019
 
 // const age = '18';
-// if (age == 18) { // == Проверяет значение === проверяет значение и тип 
+// if (age == 18) { // == Проверяет значение === проверяет значение и тип
 //     console.log('😤');
 // }
 // else {
@@ -257,7 +257,7 @@
 // logger();
 
 // function fruitProcessor(apples, oranges) {
-//     const juice = `Сок из ${apples} яблок и ${oranges} апельсинов`;    
+//     const juice = `Сок из ${apples} яблок и ${oranges} апельсинов`;
 //     return juice;
 // }
 
@@ -305,7 +305,7 @@
 //     const applePieces = cutFruitPieces(apples);
 //     const orangePieces = cutFruitPieces(oranges);
 
-//     const juice = `Сок из ${applePieces} долек яблок и ${orangePieces} долек апельсинов`;    
+//     const juice = `Сок из ${applePieces} долек яблок и ${orangePieces} долек апельсинов`;
 //     return juice;
 // }
 
@@ -324,7 +324,7 @@
 
 //     if (retirement > 0) {
 //         return `${firstName} выйдет на пенсию через ${retirement} лет`;
-//     } 
+//     }
 //     else if (retirement < 0) {
 //         return `${firstName} вышел на пенсию ${retirement * (-1)} года назад`;
 //     }
@@ -381,7 +381,6 @@
 // console.log(jonas);
 // console.log(jonas.length);
 
-
 // const calcAge = function (birthYear) {
 //     return 2037 - birthYear;
 // }
@@ -400,21 +399,21 @@
 // friends.unshift('John'); // добавить в начало массива
 // console.log(friends);
 
-// friends.pop(); // удалить последний элемент в массиве 
+// friends.pop(); // удалить последний элемент в массиве
 // const popped = friends.pop();
-// console.log(popped); 
+// console.log(popped);
 // console.log(friends);
 
-// friends.shift(); // удалитьь начальный элеменнт в массиве 
+// friends.shift(); // удалитьь начальный элеменнт в массиве
 // console.log(friends);
 
 // console.log(friends.indexOf('Steven'));
-// console.log(friends.indexOf('Bob')); // -1 так как такого элемента нет в массиве 
+// console.log(friends.indexOf('Bob')); // -1 так как такого элемента нет в массиве
 
 // friends.push(23);
 // console.log(friends.includes('Steven'));
 // console.log(friends.includes('Bob'));
-// console.log(friends.includes('23')); // false так как идет строгое равенство в том числе и по типу 
+// console.log(friends.includes('23')); // false так как идет строгое равенство в том числе и по типу
 // console.log(friends.includes(23));
 
 // if (friends.includes('Steven')) {
@@ -673,38 +672,45 @@
 
 // Ex 047 - coding challenge #8
 
-const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips = [];
-const totals = [];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
 
-for (let i = 0; i < bills.length; i++) {
-    const tip = calcTip(bills[i]);
-    tips.push(tip);
-    totals.push(tip + bills[i]);
-}
+// for (let i = 0; i < bills.length; i++) {
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(tip + bills[i]);
+// }
 
-console.log(bills, tips, totals);
+// console.log(bills, tips, totals);
 
-const calcAverage = function(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
-    return sum / arr.length;
-}
+// const calcAverage = function(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     return sum / arr.length;
+// }
 
-console.log(calcAverage([30, 203, 323]));
-console.log(calcAverage(totals));
+// console.log(calcAverage([30, 203, 323]));
+// console.log(calcAverage(totals));
 
 // Ex 048
 
 // Ex 049
 
 // Ex 050
+
+const x = 23;
+
+if (x === 23) console.log('23');
+
+const calcAge = birthYear => 2037 - birthYear;
+console.log();
 
 // Ex 051
 
